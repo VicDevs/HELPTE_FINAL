@@ -83,7 +83,7 @@ export const Cadastro = () => {
     container: {
       flex: 1,
       paddingHorizontal: 20,
-      paddingVertical: 50,
+      paddingVertical: 20,
     },
     progressContainer: {
       height: 10,

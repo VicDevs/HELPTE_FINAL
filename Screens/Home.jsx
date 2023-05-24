@@ -1,17 +1,17 @@
 import { View, StyleSheet, Text, Image, TouchableOpacity } from "react-native"
 import { TextLogo } from "../components/TextLogo"
 
-export const Home = () => {
+export const Home = ({ navigation }) => {
     return(
         <View style={styles.container}>
             <TextLogo/>
             <Image source={require('../assets/logo.png')} style={styles.logo}/>
             <Text style={styles.subtitle}>Understanding Beyond Words: The AI that Translates Your Emotions.</Text>
-            <TouchableOpacity style={styles.buttonSignin}>
+            <TouchableOpacity style={styles.buttonSignin} onPress={() => navigation.navigate('Login')}>
                 <Text style={styles.buttontxt}>Sign-in</Text>
             </TouchableOpacity>
             <Text>or</Text>
-            <TouchableOpacity style={styles.buttonSignup}>
+            <TouchableOpacity style={styles.buttonSignup} onPress={() => navigation.navigate('Cadastro')}>
                 <Text style={styles.buttontxt}>Sign-up</Text>
             </TouchableOpacity>
         </View>
